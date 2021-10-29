@@ -1,4 +1,4 @@
-This folder includes all the C++ projects that I have wrote.
+This folder includes all the MATLAB projects that I have wrote.
 
 # Content
 
