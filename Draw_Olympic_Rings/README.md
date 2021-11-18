@@ -6,7 +6,7 @@ The project is to plot a image which looks like Olympic rings, but it has follow
 4. Not every circles should be intersect. The upper line circles should be connected to the under lines, however, the parallel line’s circle should not be connected.
 For example, it should similar to the following figure. The blue one must intersect with the yellow one, and the yellow one must be intersect with the black one, 
 however, the blue one should not be connected with black one.
-- ![Olympic circles](https://github.com/Jingya9711/CPlusPlus_Projects/blob/master/Gomoku_game/forbidden.png)
+- ![Olympic circles](https://github.com/Jingya9711/MATLAB_Projects/blob/master/Draw_Olympic_Rings/Olympic_circles.png)
 5. The plotting should be done in the main program one circle at a time being added to the plot.
 
 ***Files***
