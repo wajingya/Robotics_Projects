@@ -20,7 +20,7 @@ a) Consider the available field to be a 10 m by 10 m square area. Think of it in
 intermediate waypoint and final goal are shown in Figure 1; it has to face to the right at 
 start time.
 
-- ![Map](https://github.com/Jingya9711/MATLAB_Projects/blob/master/HM5_ Drive_Robot_to_Goal(Fast_&_Smooth)/map.png)
+- ![Map](https://github.com/Jingya9711/MATLAB_Projects/blob/master/HM5_Drive_Robot_to_Goal(Fast_&_Smooth)/map.png)
 
 b) Drive the robot from the start position to the final goal position after going through the 
 intermediate goal position. If the robot is within 0.5 m of a point, we can consider the point 
