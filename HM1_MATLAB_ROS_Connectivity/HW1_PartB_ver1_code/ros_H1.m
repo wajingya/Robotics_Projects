@@ -16,5 +16,5 @@ velmsg.Angular.Z=angular_velocity;
 send(robot,velmsg);     %send message
 pause(0.1)  %use i and pause to caculate the times and control
 i=i+1;
-""end
+end
 fprintf("the performance period is %d s ",i*0.1);%show the time of robot run

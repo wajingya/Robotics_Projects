@@ -1,7 +1,4 @@
-%%Section1
-% forward Velocity= 0.5
-% angular Velocity= 0.5
-
+%% Section1
 rosshutdown
 ipad='localhost';  %get address
 rosinit(ipad);     %initialise
@@ -14,11 +11,7 @@ velmsg.Angular.Z=angularVelocity;  %change palstance
 while 1    %keep send message
 send(robot,velmsg);  %send message
 end
-%%
-%%Section2
-% forward Velocity= 0.25;
-% angular Velocity= 0.125;
-
+%% Section2
 rosshutdown
 ipad='localhost';
 rosinit(ipad);
@@ -31,11 +24,7 @@ velmsg.Angular.Z=angularVelocity;
 while 1
 send(robot,velmsg);
 end
-%%
-%%Section 3
-%forwardVelocity= 1
-%angularVelocity= 1
-
+%% Section 3
 rosshutdown
 ipad='localhost';
 rosinit(ipad);

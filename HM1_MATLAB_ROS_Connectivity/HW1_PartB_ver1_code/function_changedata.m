@@ -17,7 +17,7 @@ angular_velocity=0;
     if input1>510     %fourth part to move as a part of circle
 linear_velocity=0.5;
 angular_velocity=-0.14;
-    en3
+    end
     if input1>550     %fiveth part to move as a part of circle
 linear_velocity=0.25;
 angular_velocity=-0.3;
