@@ -55,8 +55,6 @@ clc
     
     %publish the message
     send(robot,velmsg);
-    x1
-    z12
     
  end
  
@@ -115,8 +113,6 @@ clc
     
     %publish the message[4]
     send(robot,velmsg);
-    x2
-    z22
  end
  
  %all the comments is same as the second part
@@ -147,8 +143,6 @@ clc
         velmsg.Angular.Z= abs(0.1*z32); 
         end
     end
-    x3
-    z32
     send(robot,velmsg);
  end
 

@@ -10,11 +10,17 @@ however, the blue one should not be connected with black one.
 5. The plotting should be done in the main program one circle at a time being added to the plot.
 
 ***Files***
+
 Calculate.m              : According to the polar coordinate system, determine the position of each point on the circle.
+
 Centerfuntion.m       : Confirm the five center of the five circles.
+
 Olympic_Rings.m     : The main execution file.
+
 Radiusfunction.m     : Generate the radius randomly, and judge whether the five radius are valid.
+
 presentation.zip       : The running video.
+
 final_figure.png       : The final result.
 
 ***Execution***
