@@ -26,4 +26,4 @@ final_figure.png       : The final result.
 ***Execution***
 The final figure is different every time. Since the radius are generated randomly.
 The following is one of my executing result. If you want to check the whole process, you can check the video in the folder.
-- ![Final result](https://github.com/Jingya9711/MATLAB_Projects/blob/master/Draw_Olympic_Rings/final_figure.png)
+- ![Final result](https://github.com/Jingya9711/MATLAB_Projects/blob/master/HM0_Draw_Olympic_Rings/final_figure.png)

@@ -21,6 +21,8 @@ Click the button Run in MATLAB
 
 expection_result.png  : One example result figure
 
+Homework 4.pdf  : The instruction of the project
+
 HM4_report.pdf  : The report of the project
 
 HM4_reportcode.zip  : The report Latex code
