@@ -18,7 +18,7 @@ two.
 
 ***The specific Task***
 The following is the obstacle avoid world.
-- ![Map]()
+- ![Map](https://github.com/Jingya9711/MATLAB_Projects/blob/master/HM6_Drive_Robot_to_Avoid_Obstacles/obstacle_map.png)
 
 Task A: "Random Walk"
 
