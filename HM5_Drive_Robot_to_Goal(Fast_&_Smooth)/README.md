@@ -35,6 +35,28 @@ report it.
 f) Plot the path (x, y), the forward velocity, v(t), and the heading angle q(t), as a function of 
 time during the robot travel.
 
+***Execution***
+
+1. Open one terminal, enter the command 'roscore' to open the ros environment
+
+2. Use 'matlab' to open the MATLAB.
+
+3. Use command 'cd ~/catkin_ws && catkin_make' to enter the catkin_ws folder and complie the workspace.
+
+4. Use command 'source /opt/ros/indigo/setup.bash' to source the .bash file
+
+5. Use command 'source <catkin_ws>/devel/setup.bash'  to source the setup.bash file
+
+6. Open a new terminal, use command 'roslaunch turtlebot_gazebo turtlebot_empty_world.launch' to launch the turtlebot in Gazebo
+
+7. Open a new terminal, use command 'roslaunch turtlebot_rviz_launchers view_robot.launch' to launch the turtlebot simulation in Rviz
+
+8. Open a new terminal, use command --rostopic pub -r 10 /gazebo/set_model_state gazebo_msgs/ModelState '{ model_name: mobile_base, pose: { position: {x: 0, y: 0 , z: 0 }, orientation: { x: 0, y: 0 , z: 0.5, w: 0 } }, twist: { linear: {x: 0 , y: 0 , z: 0 } , angular: {x: 0 , y: 0 , z: 0} } , reference_frame: world } '
+to set the robot face to right.
+
+9. Back to the MATLAB, click Run. Then you can back to the Gazebo and Rviz windows to view the simulation of the turtlebot motion.
+
+
 ***Files***
 
 HM5_code  : The code of the project

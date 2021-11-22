@@ -191,7 +191,7 @@ while(1)
         end
         % Because the detecting range is smaller than the hokuyo, I just
         % divied the range into three sections to change the robot velocity
-        if a>=1 && a<300
+        if a>=1 && a<320
                 angular_velocity = 0.85;
                 velocity = 0.25;
                 velmsg.Linear.X = velocity;
@@ -214,7 +214,7 @@ while(1)
 
     end
 end
-%% Task B: “Concave or U-shaped Trap”_using Hokuyo:
+%% Task B: Concave or U-shaped Trap using Hokuyo:
 clear all
 close all
 clc
@@ -297,7 +297,7 @@ while(1)
     end
 end
 
-%% Task B: “Concave or U-shaped Trap”_using Kinect:
+%% Task B: Concave or U-shaped Trap using Kinect:
 clear all
 close all
 clc
@@ -345,7 +345,7 @@ while(1)
              a = i;
            end
         end
-          if a>=1 && a<300
+          if a>=1 && a<320
                 angular_velocity = 0.85;
                 velocity = 0.15;
                 velmsg.Linear.X = velocity;
