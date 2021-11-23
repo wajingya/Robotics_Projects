@@ -1,4 +1,4 @@
-%%（x,y）开始坐标
+% The initial posiion (x, y)
 clear all
 clc
 close all
@@ -10,12 +10,13 @@ y_start= 5;
 x_final= 21;
 y_final= 21;
 Map = map(x_start,y_start,x_final,y_final);
-[map_size_x, map_size_y]=size(Map)
+[map_size_x, map_size_y]=size(Map);
 map_cell=zeros(map_size_x,map_size_y,6);
-              %%MxMx6  1,2,3-- F,G,H, 4,5--father_cell_x,father_cell_y,
-              %%6--characteristic--0为待计算open area，1为open list，2为close
-              %%list,3 star,4 aim
-%%用已知地图把障碍物/终点填充进map_cell,障碍物 F G H==INF 6--characteristic==INF
+% MxMx6  1,2,3-- F,G,H, 4,5--father_cell_x,father_cell_y,
+% 6--characteristic--0 means the open area, 1 means open list, 2 means the
+% closed list,3 star,4 aim
+% Use the known map to fill obstacles/end points into map_cell, 
+% obstacles F G H==INF 6--characteristic==INF
 map_cell(:,:,1)=inf;
 map_cell(x_start,y_start,6)=3;
 map_cell(x_final,y_final,6)=4;
@@ -34,13 +35,13 @@ end
 
 while   (abs(now_x-x_final)+abs(now_y-y_final))>1   
     
-surrounding_cell=Surrounding_function(now_x,now_y); %%得到周围八个点坐标 [x,y+1;x,y-1;x+1,y;.......] 8x2
+surrounding_cell=Surrounding_function(now_x,now_y); %%Get the surrounding eight points [x,y+1;x,y-1;x+1,y;.......] 8x2
 
-for i=1:1:8 %%caculate each cell
+for i=1:1:8 %%calculate each cell
     
     cell_characteristic=map_cell(surrounding_cell(i,1),surrounding_cell(i,2),6); %%characteristic
     
-    if cell_characteristic==0 %%三非 open area
+    if cell_characteristic==0 %%the open area
         
          G=Gfunction(surrounding_cell(i,1),surrounding_cell(i,2),now_x,now_y,map_cell(now_x,now_y,2));
          H=Hfunction(surrounding_cell(i,1),surrounding_cell(i,2),x_final,y_final) ;
@@ -87,7 +88,7 @@ end
    F_min=min(min(map_cell(:,:,1))); %min F
    [now_x,now_y]=find(map_cell(:,:,1)== F_min);
    if (length(now_x)~=1) 
-      z=z+1
+      z=z+1;
       x_y=now_x+now_y;
       position=find(x_y==max(x_y));
       now_x=now_x(position(1));
@@ -95,12 +96,10 @@ end
 
    end
    map_cell(now_x,now_y,6)=2;
-    map_cell(now_x,now_y,1)=inf;
-    Closelist(m,1)=now_x;
-    Closelist(m,2)=now_y;
-    m=m+1;
-
-   n
+   map_cell(now_x,now_y,1)=inf;
+   Closelist(m,1)=now_x;
+   Closelist(m,2)=now_y;
+   m=m+1;
    n=n+1;
    
    if n>500
@@ -133,4 +132,3 @@ i=i+1;
     [lenx,leny]=size(Closelist);
     
     Mark(lenx);
-z
