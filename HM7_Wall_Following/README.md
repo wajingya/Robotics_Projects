@@ -1,8 +1,10 @@
 ***Description***
+
 The object is to investigate the use of “wall following”, a very useful type of behavior in robotics, as 
 navigational guidance for a robot. 
 
 ***Goal***
+
 a) To do so with the use of motion feedback (output) rather than calculations based on drive 
 commands (input); that is, we are required to construct a simple control algorithm to drive 
 the robot using wall following. In this case, the motion feedback should be based on
@@ -12,6 +14,7 @@ b) To create a map of the outer perimeter of a structure, with the help of basic
 concepts, while driving autonomously using wall following.
 
 ***The specific Tasks***
+
 a) Design a control algorithm based on the wall-following algorithm to drive the Turtlebot 
 around the outside of the given “island” structure(as shown in Figure 1). The robot needs to 
 maintain an approximate spacing of 1.5 meters from the wall and keep the wall to the right.
@@ -30,6 +33,7 @@ we can follow the wall, while simultaneously avoiding hitting the wall if it cur
 front of the robot.
 
 ***The Execution***
+
 Do the following first: 
 
 - Locate the "turtlebot_gazebo" folder within your directory structure. 
@@ -42,6 +46,7 @@ directory (using the "cp" command and appropriate path prefixes). You will need 
 permission to do this!
 
 Task A(1): Outside of the given "island"- keep the wall to the right
+
 1. Open a treminal and enter the command 'roscore' to open the ROS environment.
 
 2. Open a new terminal, and enter the command 'matlab' to open the MATLAB.
@@ -64,6 +69,7 @@ pose: { position: {x: -10.0, y: -6.0 , z: 0 }, orientation: { x: 0, y: 0 , z: 0.
 9. Back to the MATLAB, click Run. Then you can back to the Gazebo and Rviz windows to view the simulation of the turtlebot motion.
 
 TaskA(2): Outside of the given "island" - keep the wall to the left
+
 1. Open a treminal and enter the command 'roscore' to open the ROS environment.
 
 2. Open a new terminal, and enter the command 'matlab' to open the MATLAB.
@@ -86,6 +92,7 @@ pose: { position: {x: -10.0, y: -6.0 , z: 0 }, orientation: { x: 0, y: 0 , z: -0
 9. Back to the MATLAB, click Run. Then you can back to the Gazebo and Rviz windows to view the simulation of the turtlebot motion.
 
 TaskB(1): Inside of the given "island" - keep the wall to the left
+
 1. Open a treminal and enter the command 'roscore' to open the ROS environment.
 
 2. Open a new terminal, and enter the command 'matlab' to open the MATLAB.
@@ -108,6 +115,7 @@ pose: { position: {x: 0.0, y: 0.0 , z: 0 }, orientation: { x: 0, y: 0 , z: 0.0, 
 9. Back to the MATLAB, click Run. Then you can back to the Gazebo and Rviz windows to view the simulation of the turtlebot motion.
 
 TaskB(2): Inside of the given "island" - keep the wall to the right
+
 1. Open a treminal and enter the command 'roscore' to open the ROS environment.
 
 2. Open a new terminal, and enter the command 'matlab' to open the MATLAB.
@@ -130,6 +138,7 @@ pose: { position: {x: 0.0, y: 0.0 , z: 0 }, orientation: { x: 0, y: 0 , z: 1.0, 
 9. Back to the MATLAB, click Run. Then you can back to the Gazebo and Rviz windows to view the simulation of the turtlebot motion.
 
 ***The generating maps***
+
 !["Task A: Outside the wall and keep the wall to the left"](https://github.com/Jingya9711/MATLAB_Projects/blob/master/HM7_Wall_Following/TaskA_left_map.png)
 
 !["Task A: Outside the wall and keep the wall to the right"](https://github.com/Jingya9711/MATLAB_Projects/blob/master/HM7_Wall_Following/TaskA_right_map.png)
@@ -140,6 +149,7 @@ pose: { position: {x: 0.0, y: 0.0 , z: 0 }, orientation: { x: 0, y: 0 , z: 1.0, 
 
 
 ***Files***
+
 HW7_photos  : The projects' photo.
 
 homework7.m  : The code of the project.
