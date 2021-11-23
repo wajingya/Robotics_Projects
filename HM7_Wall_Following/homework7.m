@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Homework 6: Drive Robot to Avoid Obstacles              %
+%Homework 7: Drive Robot to Avoid Obstacles              %
 %Auther's name: Wang Jingya                              %
 %Date:10/28/2019                                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Task A: Outside of the given “island”- keep the wall to the right
+%% Task A: Outside of the given "island"- keep the wall to the right
 % Setting the initial position as   
 % position:
 %       x: -10.0
@@ -126,29 +126,24 @@ while m==1
  % the robot turning to the left. Otherwise, running in a stright line. The
  % judging distance is 2.01 meters, which gives the robot a 0.02 tolerance.
         if length1 >3 && length1 <= 100
-            1
                 if length2 > 2.01 
-                    11
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                    12
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 else
-                    13
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
                 
   % 2. If the front distance is less than 2.5, the situation is that the
   % robot are facing the wall and need to rotate a big angle to avoiding
   % hit on the wall. 
         elseif length1 <= 3
-            2
                 velmsg.Linear.X = 0.3;
                 velmsg.Angular.Z = 0.35;
                 send(robot,velmsg);
@@ -162,33 +157,28 @@ while m==1
   % long, the robot should adjust its angular velocity in a small range.
         else
             if length2 == Inf
-                31
                 velmsg.Linear.X = 0.3;
                 velmsg.Angular.Z = -0.35;
                 send(robot,velmsg);
             else
-                32
-                if length2 > 2.01 
-                    321
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                if length2 > 2.01
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                    322
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 else
-                    323
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
             end
         end
 end
 
-%% Task A: Outside of the given “island”- keep the wall to the left
+%% Task A: Outside of the given "island" - keep the wall to the left
 % Setting the initial position as   
 % position:
 %       x: -10.0
@@ -276,17 +266,17 @@ while m==1
         end
         if length1 >2.5 && length1 <= 100
                 if length2 > 2.01 
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 else
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
         elseif length1 <= 2.5
                 velmsg.Linear.X = 0.15;
@@ -299,24 +289,24 @@ while m==1
                 send(robot,velmsg);
             else
                 if length2 > 2.01 
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 else
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
             end
         end
 
 end
 
-%% Task B: Inside of the given “island”- keep the wall to the left
+%% Task B: Inside of the given "island" - keep the wall to the left
 % Setting the initial position as   
 % position:
 %       x: 0.0
@@ -404,17 +394,17 @@ while m==1
         end
         if length1 >2.5 && length1 <= 100
                 if length2 > 2.01 
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 else
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
         elseif length1 <= 2.5
                 velmsg.Linear.X = 0.15;
@@ -427,17 +417,17 @@ while m==1
                 send(robot,velmsg);
             else
                 if length2 > 2.01 
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 else
-                velmsg.Linear.X = 0.15;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.15;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
             end
         end
@@ -445,7 +435,7 @@ while m==1
 end
 
 
-%% Task B: Inside of the given “island”- keep the wall to the right
+%% Task B: Inside of the given "island" - keep the wall to the right
 % Setting the initial position as   
 % position:
 %       x: 0.0
@@ -533,17 +523,17 @@ while m==1
         end
         if length1 >2.5 && length1 <= 100
                 if length2 > 2.01 
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 else
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
         elseif length1 <= 2.5
                 velmsg.Linear.X = 0.3;
@@ -556,17 +546,17 @@ while m==1
                 send(robot,velmsg);
             else
                 if length2 > 2.01 
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = -0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = -0.18;
+                    send(robot,velmsg);
                 elseif length2 < 2.01
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0.18;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0.18;
+                    send(robot,velmsg);
                 else
-                velmsg.Linear.X = 0.3;
-                velmsg.Angular.Z = 0;
-                send(robot,velmsg);
+                    velmsg.Linear.X = 0.3;
+                    velmsg.Angular.Z = 0;
+                    send(robot,velmsg);
                 end
             end
         end

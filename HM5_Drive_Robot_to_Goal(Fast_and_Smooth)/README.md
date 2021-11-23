@@ -18,9 +18,8 @@ due to their finite range of representation of (-p to +p).
 ***Specific Task Description***
 
 a) Consider the available field to be a 10 m by 10 m square area. Think of it in terms of the 
-“floor tiles” in Gazebo, each 1 m by 1 m. Remove all obstacles! The Turtlebot’s initial pose, 
-intermediate waypoint and final goal are shown in Figure 1; it has to face to the right at 
-start time.
+"floor tiles" in Gazebo, each 1 m by 1 m. Remove all obstacles! The Turtlebot’s initial pose, 
+intermediate waypoint and final goal are shown in Figure 1; it has to face to the right at start time.
 
 - ![Map](https://github.com/Jingya9711/MATLAB_Projects/blob/master/HM5_Drive_Robot_to_Goal(Fast_and_Smooth)/map.png)
 
@@ -51,7 +50,7 @@ time during the robot travel.
 
 7. Open a new terminal, use command 'roslaunch turtlebot_rviz_launchers view_robot.launch' to launch the turtlebot simulation in Rviz
 
-8. Open a new terminal, use command --rostopic pub -r 10 /gazebo/set_model_state gazebo_msgs/ModelState '{ model_name: mobile_base, pose: { position: {x: 0, y: 0 , z: 0 }, orientation: { x: 0, y: 0 , z: 0.5, w: 0 } }, twist: { linear: {x: 0 , y: 0 , z: 0 } , angular: {x: 0 , y: 0 , z: 0} } , reference_frame: world } '
+8. Open a new terminal, use command --rostopic pub -r 10 /gazebo/set_model_state gazebo_msgs/ModelState '{ model_name: mobile_base, pose: { position: {x: 0, y: 0 , z: 0 }, orientation: { x: 0, y: 0 , z: 0.5, w: 0.5 } }, twist: { linear: {x: 0 , y: 0 , z: 0 } , angular: {x: 0 , y: 0 , z: 0} } , reference_frame: world } '
 to set the robot face to right.
 
 9. Back to the MATLAB, click Run. Then you can back to the Gazebo and Rviz windows to view the simulation of the turtlebot motion.
