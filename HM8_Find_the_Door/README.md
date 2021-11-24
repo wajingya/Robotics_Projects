@@ -55,6 +55,8 @@ where the widest opening is.
 
 ***Files***
 
+AMR Homework 8.pdf  : The project instruction.
+
 HM8_report.pdf  : The project report
 
 HM8_report_code.zip  : The report Latex code

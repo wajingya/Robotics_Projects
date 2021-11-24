@@ -152,6 +152,8 @@ pose: { position: {x: 0.0, y: 0.0 , z: 0 }, orientation: { x: 0, y: 0 , z: 1.0, 
 
 HW7_photos  : The projects' photo.
 
+AMR Homework 7.pdf  : The instruction of the project.
+
 homework7.m  : The code of the project.
 
 Homework7_report.pdf  : The report of the project.
